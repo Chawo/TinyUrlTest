@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>URL Shortener</h2>
+        <div class="form-group">
+            <label>Link</label>
+            <input type="text" name="link" id="link" class="form-control" placeholder="Enter the link here" required="" />
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input class="btn btn-primary" name="submitBtn" id="submitBtn" value="Save" type="button" />
+            </div>
+        </div> 
+    </div>   
+    <div class="col-md-6">
+        <div class="form-group" id="newLinkFormGroup">
+            <h2>Here is your new link</h2>
+            <label name="newLink" id="newLink"></label>
+        </div>
+
+        <div class="form-group" id="sessionListOfUrl">
+            <h2>Here is your last uploaded url</h2>
+            <ul name="sessionObj" id="sessionObj" style="list-style-type: none;"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/myJavaScript/TinyURL.js"></script>
